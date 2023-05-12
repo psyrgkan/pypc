@@ -7,6 +7,7 @@ from pypc import utils
 from pypc import datasets
 from pypc import optim
 from pypc.models import PCModel
+import wandb
 
 
 def main(cf):
@@ -16,12 +17,20 @@ def main(cf):
     utils.seed(cf.seed)
     utils.save_json({k: str(v) for (k, v) in cf.items()}, cf.logdir + "config.json")
 
-    train_dataset = datasets.MNIST(
+    # train_dataset = datasets.MNIST(
+    #     train=True, scale=cf.label_scale, size=cf.train_size, normalize=cf.normalize
+    # )
+    # test_dataset = datasets.MNIST(
+    #     train=False, scale=cf.label_scale, size=cf.test_size, normalize=cf.normalize
+    # )
+
+    train_dataset = datasets.CIFAR10(
         train=True, scale=cf.label_scale, size=cf.train_size, normalize=cf.normalize
     )
-    test_dataset = datasets.MNIST(
+    test_dataset = datasets.CIFAR10(
         train=False, scale=cf.label_scale, size=cf.test_size, normalize=cf.normalize
     )
+
     train_loader = datasets.get_dataloader(train_dataset, cf.batch_size)
     test_loader = datasets.get_dataloader(test_dataset, cf.batch_size)
     print(f"Loaded data [train batches: {len(train_loader)} test batches: {len(test_loader)}]")
@@ -65,6 +74,7 @@ def main(cf):
                     acc += datasets.accuracy(label_preds, label_batch)
                 metrics["acc"].append(acc / len(test_loader))
                 print("\nTest @ epoch {} / Accuracy: {:.4f}".format(epoch, acc / len(test_loader)))
+                wandb.log({"acc": acc / len(test_loader)})
 
             utils.save_json(metrics, cf.logdir + "metrics.json")
 
@@ -104,7 +114,24 @@ if __name__ == "__main__":
         # model params
         cf.use_bias = True
         cf.kaiming_init = False
-        cf.nodes = [784, 300, 100, 10]
+        cf.nodes = [1024, 640, 200, 10]
         cf.act_fn = utils.ReLU()
 
+        wandb.init(
+            # set the wandb project where this run will be logged
+            project="cifar-supervised-experiment",
+            
+            # track hyperparameters and run metadata
+            config={
+            "cf" : pprint.pformat(cf),
+            "learning_rate": cf.lr,
+            "architecture": "FC",
+            "dataset": "CIFAR10",
+            "epochs": cf.n_epochs,
+            }
+        )
+
         main(cf)
+        # [optional] finish the wandb run, necessary in notebooks
+        wandb.finish()
+

@@ -7,6 +7,7 @@ from pypc import utils
 from pypc import datasets
 from pypc import optim
 from pypc.models import PCModel
+import wandb
 
 
 def main(cf):
@@ -65,6 +66,7 @@ def main(cf):
                 _, label_batch = next(iter(test_loader))
                 img_preds = model.forward(label_batch)
                 datasets.plot_imgs(img_preds, cf.imgdir + f"{epoch}.png")
+                wandb.log({"acc": acc / len(test_loader)})
 
             utils.save_json(metrics, cf.logdir + "metrics.json")
 
@@ -77,7 +79,7 @@ if __name__ == "__main__":
 
         # experiment params
         cf.seed = seed
-        cf.n_epochs = 20
+        cf.n_epochs = 10
         cf.test_every = 1
         cf.logdir = f"data/generative/{seed}/"
         cf.imgdir = cf.logdir + "imgs/"
@@ -103,11 +105,27 @@ if __name__ == "__main__":
         cf.init_std = 0.01
         cf.fixed_preds_train = False
         cf.fixed_preds_test = False
-
+        
         # model params
         cf.use_bias = True
         cf.kaiming_init = False
         cf.nodes = [10, 100, 300, 784]
         cf.act_fn = utils.Tanh()
 
+        # start a new wandb run to track this script
+        wandb.init(
+            # set the wandb project where this run will be logged
+            project="first-generative-experiment",
+            
+            # track hyperparameters and run metadata
+            config={
+            "learning_rate": cf.lr,
+            "architecture": "FC",
+            "dataset": "MNIST",
+            "epochs": cf.n_epochs,
+            }
+        )
+
         main(cf)
+        # [optional] finish the wandb run, necessary in notebooks
+        wandb.finish()

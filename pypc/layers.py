@@ -101,16 +101,27 @@ class ConvLayer(Layer):
     self.stride = stride
     self.output_size = math.floor((self.input_size + (2 * self.padding) - self.kernel_size)/self.stride) +1
     self.learning_rate = learning_rate
-    self.act_fn
+    self.act_fn = act_fn
     self.device = device
+    super().__init__(self.input_size, self.output_size, act_fn)
     self.kernel= torch.empty(self.num_filters,self.num_channels,self.kernel_size,self.kernel_size).normal_(mean=0,std=0.05).to(self.device)
     self.unfold = nn.Unfold(kernel_size=(self.kernel_size,self.kernel_size),padding=self.padding,stride=self.stride).to(self.device)
     self.fold = nn.Fold(output_size=(self.input_size,self.input_size),kernel_size=(self.kernel_size,self.kernel_size),padding=self.padding,stride=self.stride).to(self.device)
 
   def forward(self,inp):
-    self.X_col = self.unfold(inp.clone())
-    self.flat_weights = self.kernel.reshape(self.num_filters,-1)
+    # Reshape x to the correct dimensions for matrix multiplication
+    inp = inp.view(inp.size(0), -1, self.input_size[0], self.input_size[1])
+
+    # Compute X_col
+    self.X_col = self.unfold(inp.clone()).view(inp.size(0), -1, self.num_columns)
+    self.X_col = self.X_col.permute(1, 0, 2).contiguous().view(-1, self.num_columns)
+
+    # Perform matrix multiplication
     out = self.flat_weights @ self.X_col
+
+    # self.X_col = self.unfold(inp.clone())
+    # self.flat_weights = self.kernel.reshape(self.num_filters,-1)
+    # out = self.flat_weights @ self.X_col
     self.activations = out.reshape(self.batch_size, self.num_filters, self.output_size, self.output_size)
     return self.f(self.activations)
 

@@ -1,0 +1,247 @@
+2023-05-12 19:21:32,529 INFO    StreamThr :74782 [internal.py:wandb_internal():86] W&B internal server running at pid: 74782, started at: 2023-05-12 19:21:32.527938
+2023-05-12 19:21:32,530 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status
+2023-05-12 19:21:32,532 INFO    WriterThread:74782 [datastore.py:open_for_write():85] open: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/run-zcyg4ame.wandb
+2023-05-12 19:21:32,534 DEBUG   SenderThread:74782 [sender.py:send():375] send: header
+2023-05-12 19:21:32,564 DEBUG   SenderThread:74782 [sender.py:send():375] send: run
+2023-05-12 19:21:32,774 INFO    SenderThread:74782 [dir_watcher.py:__init__():219] watching files in: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files
+2023-05-12 19:21:32,775 INFO    SenderThread:74782 [sender.py:_start_run_threads():1124] run started: zcyg4ame with start time 1683933692.52744
+2023-05-12 19:21:32,775 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: summary_record
+2023-05-12 19:21:32,775 INFO    SenderThread:74782 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-12 19:21:32,782 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: check_version
+2023-05-12 19:21:32,782 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: check_version
+2023-05-12 19:21:32,875 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: run_start
+2023-05-12 19:21:32,894 DEBUG   HandlerThread:74782 [system_info.py:__init__():31] System info init
+2023-05-12 19:21:32,895 DEBUG   HandlerThread:74782 [system_info.py:__init__():46] System info init done
+2023-05-12 19:21:32,895 INFO    HandlerThread:74782 [system_monitor.py:start():181] Starting system monitor
+2023-05-12 19:21:32,895 INFO    SystemMonitor:74782 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-12 19:21:32,895 INFO    HandlerThread:74782 [system_monitor.py:probe():201] Collecting system info
+2023-05-12 19:21:32,896 DEBUG   HandlerThread:74782 [system_info.py:probe():195] Probing system
+2023-05-12 19:21:32,896 INFO    SystemMonitor:74782 [interfaces.py:start():190] Started cpu monitoring
+2023-05-12 19:21:32,897 INFO    SystemMonitor:74782 [interfaces.py:start():190] Started disk monitoring
+2023-05-12 19:21:32,897 INFO    SystemMonitor:74782 [interfaces.py:start():190] Started memory monitoring
+2023-05-12 19:21:32,898 INFO    SystemMonitor:74782 [interfaces.py:start():190] Started network monitoring
+2023-05-12 19:21:32,912 DEBUG   HandlerThread:74782 [system_info.py:_probe_git():180] Probing git
+2023-05-12 19:21:32,949 DEBUG   HandlerThread:74782 [system_info.py:_probe_git():188] Probing git done
+2023-05-12 19:21:32,949 DEBUG   HandlerThread:74782 [system_info.py:probe():240] Probing system done
+2023-05-12 19:21:32,949 DEBUG   HandlerThread:74782 [system_monitor.py:probe():210] {'os': 'macOS-10.16-x86_64-i386-64bit', 'python': '3.10.11', 'heartbeatAt': '2023-05-12T23:21:32.896842', 'startedAt': '2023-05-12T23:21:32.516469', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '-m scripts.supervised', 'git': {'remote': 'https://github.com/infer-actively/pypc.git', 'commit': '965425df619210f577478f1ffd64b038753879b9'}, 'email': 'psyrganis@gmail.com', 'root': '/Users/tinym/Desktop/pypc', 'host': 'tinyputer.devices.brown.edu', 'username': 'tinym', 'executable': '/Users/tinym/opt/anaconda3/envs/predcod/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'total': 228.27386474609375, 'used': 23.594867706298828}, 'memory': {'total': 16.0}}
+2023-05-12 19:21:32,949 INFO    HandlerThread:74782 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-12 19:21:32,949 INFO    HandlerThread:74782 [system_monitor.py:probe():214] Publishing system info
+2023-05-12 19:21:32,949 DEBUG   HandlerThread:74782 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-12 19:21:32,950 DEBUG   HandlerThread:74782 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-12 19:21:32,950 DEBUG   HandlerThread:74782 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-12 19:21:33,205 DEBUG   HandlerThread:74782 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-12 19:21:33,206 INFO    HandlerThread:74782 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-12 19:21:33,209 DEBUG   SenderThread:74782 [sender.py:send():375] send: files
+2023-05-12 19:21:33,209 INFO    SenderThread:74782 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-12 19:21:33,214 DEBUG   SenderThread:74782 [sender.py:send():375] send: telemetry
+2023-05-12 19:21:33,214 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:21:33,214 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:21:33,534 INFO    wandb-upload_0:74782 [upload_job.py:push():137] Uploaded file /var/folders/sk/rfg_lvqj5r5c204vs5zftlgw0000gn/T/tmpkr_u3f5twandb/ltwm56bk-wandb-metadata.json
+2023-05-12 19:21:33,781 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/conda-environment.yaml
+2023-05-12 19:21:33,781 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/wandb-metadata.json
+2023-05-12 19:21:33,781 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/requirements.txt
+2023-05-12 19:21:33,781 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/wandb-summary.json
+2023-05-12 19:21:33,781 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/output.log
+2023-05-12 19:21:35,790 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/output.log
+2023-05-12 19:21:37,681 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:21:37,802 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/output.log
+2023-05-12 19:21:41,481 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/output.log
+2023-05-12 19:21:42,878 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:21:44,027 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/output.log
+2023-05-12 19:21:46,406 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/output.log
+2023-05-12 19:21:48,117 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:21:48,218 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:21:48,219 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:21:48,954 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/output.log
+2023-05-12 19:21:53,306 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:21:58,330 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:03,223 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:22:03,224 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:22:03,338 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:04,031 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/config.yaml
+2023-05-12 19:22:08,571 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:13,594 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:18,228 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:22:18,228 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:22:19,301 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:24,319 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:29,339 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:30,599 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-12 19:22:30,600 DEBUG   SenderThread:74782 [sender.py:send():375] send: history
+2023-05-12 19:22:30,600 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: summary_record
+2023-05-12 19:22:30,601 INFO    SenderThread:74782 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-12 19:22:31,155 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/wandb-summary.json
+2023-05-12 19:22:32,160 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/output.log
+2023-05-12 19:22:32,904 DEBUG   SystemMonitor:74782 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-12 19:22:32,904 DEBUG   SenderThread:74782 [sender.py:send():375] send: stats
+2023-05-12 19:22:33,232 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:22:33,233 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:22:35,316 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:40,337 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:45,357 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:48,235 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:22:48,236 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:22:51,306 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:22:56,323 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:01,346 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:02,910 DEBUG   SenderThread:74782 [sender.py:send():375] send: stats
+2023-05-12 19:23:03,240 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:23:03,240 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:23:07,347 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:12,366 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:15,070 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-12 19:23:15,072 DEBUG   SenderThread:74782 [sender.py:send():375] send: history
+2023-05-12 19:23:15,072 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: summary_record
+2023-05-12 19:23:15,072 INFO    SenderThread:74782 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-12 19:23:15,336 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/wandb-summary.json
+2023-05-12 19:23:18,084 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:18,246 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:23:18,246 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:23:23,329 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:28,349 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:32,916 DEBUG   SenderThread:74782 [sender.py:send():375] send: stats
+2023-05-12 19:23:33,250 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:23:33,251 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:23:34,322 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:39,341 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:44,365 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:48,255 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:23:48,256 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:23:50,323 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:55,339 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:23:55,466 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-12 19:23:55,467 DEBUG   SenderThread:74782 [sender.py:send():375] send: history
+2023-05-12 19:23:55,467 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: summary_record
+2023-05-12 19:23:55,468 INFO    SenderThread:74782 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-12 19:23:55,519 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/wandb-summary.json
+2023-05-12 19:24:00,489 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:24:02,921 DEBUG   SenderThread:74782 [sender.py:send():375] send: stats
+2023-05-12 19:24:03,261 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:24:03,261 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:24:06,338 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:24:11,356 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:24:16,380 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:24:18,266 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:24:18,266 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:24:22,347 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:24:27,372 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:24:32,334 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-12 19:24:32,335 DEBUG   SenderThread:74782 [sender.py:send():375] send: history
+2023-05-12 19:24:32,335 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: summary_record
+2023-05-12 19:24:32,336 INFO    SenderThread:74782 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-12 19:24:32,698 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/wandb-summary.json
+2023-05-12 19:24:32,927 DEBUG   SenderThread:74782 [sender.py:send():375] send: stats
+2023-05-12 19:24:32,928 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:24:33,271 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:24:33,271 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:24:38,352 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:24:43,375 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:24:48,276 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:24:48,277 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:24:49,341 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:26:10,459 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:26:15,503 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:29:07,835 DEBUG   SenderThread:74782 [sender.py:send():375] send: stats
+2023-05-12 19:29:08,183 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-12 19:29:08,183 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: stop_status
+2023-05-12 19:29:13,230 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:29:18,269 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:37:32,239 INFO    SenderThread:74782 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fe07a41a650>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/requests/adapters.py", line 487, in send
+    resp = conn.urlopen(
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe07a41a650>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/requests/adapters.py", line 520, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe07a41a650>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-05-12 19:37:35,858 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:37:36,816 WARNING FileStreamThread:74782 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')). func: <bound method Session.post of <requests.sessions.Session object at 0x7fe07a2ff130>>, args: ('https://api.wandb.ai/files/pypc/cifar-supervised-experiment/zcyg4ame/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 5, 'content': ['{"system.cpu": 2.29, "system.cpu.0.cpu_percent": 99.9, "system.cpu.1.cpu_percent": 99.87, "system.cpu.2.cpu_percent": 99.83, "system.cpu.3.cpu_percent": 99.83, "system.cpu.4.cpu_percent": 99.37, "system.cpu.5.cpu_percent": 99.23, "system.cpu.6.cpu_percent": 99.17, "system.cpu.7.cpu_percent": 99.13, "system.proc.cpu.threads": 13, "system.network.sent": 18748620.8, "system.network.recv": 9433565.87, "system.disk": 81.3, "system.proc.memory.availableMB": 1441.42, "system.memory": 91.2, "system.proc.memory.rssMB": 1031.98, "system.proc.memory.percent": 6.3, "_wandb": true, "_timestamp": 1683934147.834398, "_runtime": 455.306958}']}}, 'dropped': 0}}
+2023-05-12 19:37:38,823 WARNING FileStreamThread:74782 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/pypc/cifar-supervised-experiment/zcyg4ame/file_stream (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe07a418ca0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')). func: <bound method Session.post of <requests.sessions.Session object at 0x7fe07a2ff130>>, args: ('https://api.wandb.ai/files/pypc/cifar-supervised-experiment/zcyg4ame/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 5, 'content': ['{"system.cpu": 2.29, "system.cpu.0.cpu_percent": 99.9, "system.cpu.1.cpu_percent": 99.87, "system.cpu.2.cpu_percent": 99.83, "system.cpu.3.cpu_percent": 99.83, "system.cpu.4.cpu_percent": 99.37, "system.cpu.5.cpu_percent": 99.23, "system.cpu.6.cpu_percent": 99.17, "system.cpu.7.cpu_percent": 99.13, "system.proc.cpu.threads": 13, "system.network.sent": 18748620.8, "system.network.recv": 9433565.87, "system.disk": 81.3, "system.proc.memory.availableMB": 1441.42, "system.memory": 91.2, "system.proc.memory.rssMB": 1031.98, "system.proc.memory.percent": 6.3, "_wandb": true, "_timestamp": 1683934147.834398, "_runtime": 455.306958}']}}, 'dropped': 0}}
+2023-05-12 19:37:40,874 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:37:42,926 WARNING FileStreamThread:74782 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/pypc/cifar-supervised-experiment/zcyg4ame/file_stream (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe07a419de0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')). func: <bound method Session.post of <requests.sessions.Session object at 0x7fe07a2ff130>>, args: ('https://api.wandb.ai/files/pypc/cifar-supervised-experiment/zcyg4ame/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 5, 'content': ['{"system.cpu": 2.29, "system.cpu.0.cpu_percent": 99.9, "system.cpu.1.cpu_percent": 99.87, "system.cpu.2.cpu_percent": 99.83, "system.cpu.3.cpu_percent": 99.83, "system.cpu.4.cpu_percent": 99.37, "system.cpu.5.cpu_percent": 99.23, "system.cpu.6.cpu_percent": 99.17, "system.cpu.7.cpu_percent": 99.13, "system.proc.cpu.threads": 13, "system.network.sent": 18748620.8, "system.network.recv": 9433565.87, "system.disk": 81.3, "system.proc.memory.availableMB": 1441.42, "system.memory": 91.2, "system.proc.memory.rssMB": 1031.98, "system.proc.memory.percent": 6.3, "_wandb": true, "_timestamp": 1683934147.834398, "_runtime": 455.306958}']}}, 'dropped': 0}}
+2023-05-12 19:37:45,895 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:37:50,921 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:37:51,390 WARNING FileStreamThread:74782 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/pypc/cifar-supervised-experiment/zcyg4ame/file_stream (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe07a419630>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')). func: <bound method Session.post of <requests.sessions.Session object at 0x7fe07a2ff130>>, args: ('https://api.wandb.ai/files/pypc/cifar-supervised-experiment/zcyg4ame/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 5, 'content': ['{"system.cpu": 2.29, "system.cpu.0.cpu_percent": 99.9, "system.cpu.1.cpu_percent": 99.87, "system.cpu.2.cpu_percent": 99.83, "system.cpu.3.cpu_percent": 99.83, "system.cpu.4.cpu_percent": 99.37, "system.cpu.5.cpu_percent": 99.23, "system.cpu.6.cpu_percent": 99.17, "system.cpu.7.cpu_percent": 99.13, "system.proc.cpu.threads": 13, "system.network.sent": 18748620.8, "system.network.recv": 9433565.87, "system.disk": 81.3, "system.proc.memory.availableMB": 1441.42, "system.memory": 91.2, "system.proc.memory.rssMB": 1031.98, "system.proc.memory.percent": 6.3, "_wandb": true, "_timestamp": 1683934147.834398, "_runtime": 455.306958}']}}, 'dropped': 0}}
+2023-05-12 19:37:55,943 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:37:59,283 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-12 19:38:00,962 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:38:02,451 DEBUG   SenderThread:74782 [sender.py:send():375] send: stats
+2023-05-12 19:38:02,451 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:38:02,451 DEBUG   SenderThread:74782 [sender.py:send():375] send: history
+2023-05-12 19:38:02,452 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: summary_record
+2023-05-12 19:38:02,452 INFO    SenderThread:74782 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-12 19:38:02,796 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/wandb-summary.json
+2023-05-12 19:38:05,979 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:38:07,466 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:38:11,001 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:38:12,487 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:38:15,366 DEBUG   SenderThread:74782 [sender.py:send():375] send: stats
+2023-05-12 19:38:16,021 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:38:18,380 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:38:21,041 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:38:23,395 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:38:26,065 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:38:28,419 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:38:31,080 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:38:33,437 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:38:36,099 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:38:38,462 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:38:41,123 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-12 19:38:43,289 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-12 19:38:43,289 DEBUG   SenderThread:74782 [sender.py:send():375] send: history
+2023-05-12 19:38:43,289 DEBUG   SenderThread:74782 [sender.py:send_request():402] send_request: summary_record
+2023-05-12 19:38:43,291 INFO    SenderThread:74782 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-12 19:38:43,973 INFO    Thread-12 :74782 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230512_192132-zcyg4ame/files/wandb-summary.json
+2023-05-12 19:38:44,296 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: status_report
+2023-05-12 19:38:45,365 DEBUG   SenderThread:74782 [sender.py:send():375] send: stats
+2023-05-12 19:38:46,148 DEBUG   HandlerThread:74782 [handler.py:handle_request():144] handle_request: keepalive

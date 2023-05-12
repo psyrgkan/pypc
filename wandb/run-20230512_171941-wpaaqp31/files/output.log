@@ -1,0 +1,54 @@
+Starting generative experiment data/generative/0/: --seed 0 --device cpu
+{'act_fn': <pypc.utils.Tanh object at 0x7f86ba77c940>,
+ 'batch_scale': True,
+ 'batch_size': 64,
+ 'fixed_preds_test': False,
+ 'fixed_preds_train': False,
+ 'grad_clip': None,
+ 'imgdir': 'data/generative/0/imgs/',
+ 'init_std': 0.01,
+ 'kaiming_init': False,
+ 'label_scale': None,
+ 'logdir': 'data/generative/0/',
+ 'lr': 0.0001,
+ 'mu_dt': 0.01,
+ 'n_epochs': 20,
+ 'n_test_iters': 200,
+ 'n_train_iters': 50,
+ 'nodes': [10, 100, 300, 784],
+ 'normalize': True,
+ 'optim': 'Adam',
+ 'seed': 0,
+ 'seeds': [0],
+ 'test_every': 1,
+ 'test_size': None,
+ 'train_size': None,
+ 'use_bias': True,
+ 'weight_decay': None}
+Loaded data [train batches: 937 test batches: 156]
+Train @ epoch 1 (937 batches)
+Test @ epoch 1
+Accuracy: 0.8363
+Train @ epoch 2 (937 batches)
+Test @ epoch 2
+Accuracy: 0.8449
+Train @ epoch 3 (937 batches)
+Test @ epoch 3
+Accuracy: 0.8446
+Train @ epoch 4 (937 batches)
+Traceback (most recent call last):
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/tinym/Desktop/pypc/scripts/generative.py", line 130, in <module>
+    main(cf)
+  File "/Users/tinym/Desktop/pypc/scripts/generative.py", line 46, in main
+    model.train_batch_generative(
+  File "/Users/tinym/Desktop/pypc/pypc/models.py", line 68, in train_batch_generative
+    self.train_updates(n_iters, fixed_preds=fixed_preds)
+  File "/Users/tinym/Desktop/pypc/pypc/models.py", line 89, in train_updates
+    delta = self.layers[l].backward(self.errs[l + 1]) - self.errs[l]
+  File "/Users/tinym/Desktop/pypc/pypc/layers.py", line 81, in backward
+    out = torch.matmul(err * fn_deriv, self.weights.T)
+KeyboardInterrupt

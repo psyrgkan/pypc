@@ -1,0 +1,41 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-05-12T23:16:29.436242",
+    "startedAt": "2023-05-12T23:16:29.021543",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "-m scripts.supervised",
+    "git": {
+        "remote": "https://github.com/infer-actively/pypc.git",
+        "commit": "965425df619210f577478f1ffd64b038753879b9"
+    },
+    "email": "psyrganis@gmail.com",
+    "root": "/Users/tinym/Desktop/pypc",
+    "host": "tinyputer.devices.brown.edu",
+    "username": "tinym",
+    "executable": "/Users/tinym/opt/anaconda3/envs/predcod/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "total": 228.27386474609375,
+        "used": 23.594867706298828
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

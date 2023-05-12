@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import torch
 from torch.utils import data
 from torchvision import datasets, transforms
+import cv2
 
 from pypc import utils
 
@@ -70,6 +71,14 @@ class CIFAR10(datasets.CIFAR10):
     def __getitem__(self, index):
         data, target = super().__getitem__(index)
         data = _to_vector(data)
+        print(data.shape)
+        data = data.view(3, 32, 32)
+
+        # Convert the 3-channel image to grayscale
+        gray = 0.2989 * data[0] + 0.5870 * data[1] + 0.1140 * data[2]
+
+        # Flatten the grayscale image back to a 1D tensor of shape [1024]
+        data = gray.view(-1)
         target = _one_hot(target)
         if self.scale is not None:
             target = _scale(target, self.scale)

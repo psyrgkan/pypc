@@ -1,0 +1,44 @@
+Starting supervised experiment data/supervised/0/: --seed 0 --device cpu
+{'act_fn': <pypc.utils.ReLU object at 0x7f8e10191000>,
+ 'batch_scale': False,
+ 'batch_size': 64,
+ 'fixed_preds_train': True,
+ 'grad_clip': 50,
+ 'kaiming_init': False,
+ 'label_scale': None,
+ 'log_every': 100,
+ 'logdir': 'data/supervised/0/',
+ 'lr': 0.0001,
+ 'mu_dt': 0.01,
+ 'n_epochs': 30,
+ 'n_train_iters': 50,
+ 'nodes': [784, 300, 100, 10],
+ 'normalize': False,
+ 'optim': 'Adam',
+ 'seed': 0,
+ 'seeds': [0],
+ 'test_every': 1,
+ 'test_size': None,
+ 'train_size': None,
+ 'use_bias': True,
+ 'weight_decay': None}
+Files already downloaded and verified
+Files already downloaded and verified
+Loaded data [train batches: 781 test batches: 156]
+Train @ epoch 1 (781 batches)
+Traceback (most recent call last):
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/tinym/Desktop/pypc/scripts/supervised_CNN.py", line 126, in <module>
+    main(cf)
+  File "/Users/tinym/Desktop/pypc/scripts/supervised_CNN.py", line 52, in main
+    model.train_batch_supervised(
+  File "/Users/tinym/Desktop/pypc/pypc/models.py", line 181, in train_batch_supervised
+    self.propagate_mu()
+  File "/Users/tinym/Desktop/pypc/pypc/models.py", line 176, in propagate_mu
+    self.mus[l] = self.layers[l - 1].forward(self.mus[l - 1])
+  File "/Users/tinym/Desktop/pypc/pypc/layers.py", line 113, in forward
+    inp = inp.view(inp.size(0), -1, self.input_size[0], self.input_size[1])
+TypeError: 'int' object is not subscriptable

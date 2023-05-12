@@ -1,0 +1,28 @@
+2023-05-12 18:48:40,807 INFO    MainThread:72614 [wandb_setup.py:_flush():76] Current SDK version is 0.15.2
+2023-05-12 18:48:40,807 INFO    MainThread:72614 [wandb_setup.py:_flush():76] Configure stats pid to 72614
+2023-05-12 18:48:40,807 INFO    MainThread:72614 [wandb_setup.py:_flush():76] Loading settings from /Users/tinym/.config/wandb/settings
+2023-05-12 18:48:40,807 INFO    MainThread:72614 [wandb_setup.py:_flush():76] Loading settings from /Users/tinym/Desktop/pypc/wandb/settings
+2023-05-12 18:48:40,807 INFO    MainThread:72614 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-12 18:48:40,807 INFO    MainThread:72614 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-12 18:48:40,807 WARNING MainThread:72614 [wandb_setup.py:_flush():76] Could not find program at -m scripts.supervised_CNN
+2023-05-12 18:48:40,807 INFO    MainThread:72614 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program': '-m scripts.supervised_CNN'}
+2023-05-12 18:48:40,807 INFO    MainThread:72614 [wandb_init.py:_log_setup():507] Logging user logs to /Users/tinym/Desktop/pypc/wandb/run-20230512_184840-6k6xmbj7/logs/debug.log
+2023-05-12 18:48:40,808 INFO    MainThread:72614 [wandb_init.py:_log_setup():508] Logging internal logs to /Users/tinym/Desktop/pypc/wandb/run-20230512_184840-6k6xmbj7/logs/debug-internal.log
+2023-05-12 18:48:40,808 INFO    MainThread:72614 [wandb_init.py:init():547] calling init triggers
+2023-05-12 18:48:40,808 INFO    MainThread:72614 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'cf': "{'act_fn': <pypc.utils.ReLU object at 0x7fb1e8191000>,\n 'batch_scale': False,\n 'batch_size': 64,\n 'fixed_preds_train': True,\n 'grad_clip': 50,\n 'kaiming_init': False,\n 'label_scale': None,\n 'log_every': 100,\n 'logdir': 'data/supervised/0/',\n 'lr': 0.0001,\n 'mu_dt': 0.01,\n 'n_epochs': 30,\n 'n_train_iters': 50,\n 'nodes': [784, 300, 100, 10],\n 'normalize': False,\n 'optim': 'Adam',\n 'seed': 0,\n 'seeds': [0],\n 'test_every': 1,\n 'test_size': None,\n 'train_size': None,\n 'use_bias': True,\n 'weight_decay': None}", 'learning_rate': 0.0001, 'architecture': 'FC', 'dataset': 'MNIST', 'epochs': 30}
+2023-05-12 18:48:40,808 INFO    MainThread:72614 [wandb_init.py:init():596] starting backend
+2023-05-12 18:48:40,808 INFO    MainThread:72614 [wandb_init.py:init():600] setting up manager
+2023-05-12 18:48:40,811 INFO    MainThread:72614 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-05-12 18:48:40,815 INFO    MainThread:72614 [wandb_init.py:init():606] backend started and connected
+2023-05-12 18:48:40,820 INFO    MainThread:72614 [wandb_init.py:init():700] updated telemetry
+2023-05-12 18:48:40,851 INFO    MainThread:72614 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-05-12 18:48:41,145 INFO    MainThread:72614 [wandb_run.py:_on_init():2177] communicating current version
+2023-05-12 18:48:41,210 INFO    MainThread:72614 [wandb_run.py:_on_init():2186] got version response 
+2023-05-12 18:48:41,210 INFO    MainThread:72614 [wandb_init.py:init():787] starting run threads in backend
+2023-05-12 18:48:41,298 INFO    MainThread:72614 [wandb_run.py:_console_start():2158] atexit reg
+2023-05-12 18:48:41,298 INFO    MainThread:72614 [wandb_run.py:_redirect():2013] redirect: SettingsConsole.WRAP_RAW
+2023-05-12 18:48:41,299 INFO    MainThread:72614 [wandb_run.py:_redirect():2078] Wrapping output streams.
+2023-05-12 18:48:41,299 INFO    MainThread:72614 [wandb_run.py:_redirect():2103] Redirects installed.
+2023-05-12 18:48:41,299 INFO    MainThread:72614 [wandb_init.py:init():829] run started, returning control to user process
+2023-05-12 18:49:00,560 WARNING MsgRouterThr:72614 [router.py:message_loop():77] message_loop has been closed

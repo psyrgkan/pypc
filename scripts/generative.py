@@ -113,18 +113,18 @@ if __name__ == "__main__":
         cf.act_fn = utils.Tanh()
 
         # start a new wandb run to track this script
-        wandb.init(
-            # set the wandb project where this run will be logged
-            project="first-generative-experiment",
+        # wandb.init(
+        #     # set the wandb project where this run will be logged
+        #     project="first-generative-experiment",
             
-            # track hyperparameters and run metadata
-            config={
-            "learning_rate": cf.lr,
-            "architecture": "FC",
-            "dataset": "MNIST",
-            "epochs": cf.n_epochs,
-            }
-        )
+        #     # track hyperparameters and run metadata
+        #     config={
+        #     "learning_rate": cf.lr,
+        #     "architecture": "FC",
+        #     "dataset": "MNIST",
+        #     "epochs": cf.n_epochs,
+        #     }
+        #)
 
         main(cf)
         # [optional] finish the wandb run, necessary in notebooks

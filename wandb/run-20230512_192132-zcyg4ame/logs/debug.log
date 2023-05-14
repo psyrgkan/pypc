@@ -25,3 +25,10 @@ config: {'cf': "{'act_fn': <pypc.utils.ReLU object at 0x7fe28804fc10>,\n 'batch_
 2023-05-12 19:21:33,213 INFO    MainThread:74593 [wandb_run.py:_redirect():2078] Wrapping output streams.
 2023-05-12 19:21:33,213 INFO    MainThread:74593 [wandb_run.py:_redirect():2103] Redirects installed.
 2023-05-12 19:21:33,213 INFO    MainThread:74593 [wandb_init.py:init():829] run started, returning control to user process
+2023-05-12 20:09:16,240 INFO    MainThread:74593 [wandb_run.py:_finish():1893] finishing run pypc/cifar-supervised-experiment/zcyg4ame
+2023-05-12 20:09:16,240 INFO    MainThread:74593 [wandb_run.py:_atexit_cleanup():2127] got exitcode: 0
+2023-05-12 20:09:16,241 INFO    MainThread:74593 [wandb_run.py:_restore():2110] restore
+2023-05-12 20:09:16,241 INFO    MainThread:74593 [wandb_run.py:_restore():2116] restore done
+2023-05-12 20:09:39,584 INFO    MainThread:74593 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-05-12 20:09:39,586 INFO    MainThread:74593 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-05-12 20:09:39,598 INFO    MainThread:74593 [wandb_run.py:_footer_sync_info():3428] logging synced files

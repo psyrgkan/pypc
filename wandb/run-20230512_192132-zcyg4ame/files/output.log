@@ -56431,3 +56431,12 @@ torch.Size([3, 1024])
 torch.Size([3, 1024])
 torch.Size([3, 1024])
 Loaded data [train batches: 781 test batches: 156]
+
+Train @ epoch 27 (781 batches)
+Test @ epoch 27 / Accuracy: 0.4403
+Train @ epoch 28 (781 batches)
+Test @ epoch 28 / Accuracy: 0.4406
+Train @ epoch 29 (781 batches)
+Test @ epoch 29 / Accuracy: 0.4415
+Train @ epoch 30 (781 batches)
+Test @ epoch 30 / Accuracy: 0.4408

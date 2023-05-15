@@ -37,8 +37,8 @@ def main(cf):
     test_loader = datasets.get_dataloader(test_dataset, cf.batch_size)
     print(f"Loaded data [train batches: {len(train_loader)} test batches: {len(test_loader)}]")
 
-    ############################
-    # Training the PC model
+    # ##########################
+    # # Training the PC model
     # model = PCModel(
     #     nodes=cf.nodes,
     #     mu_dt=cf.mu_dt,
@@ -62,13 +62,14 @@ def main(cf):
 
     #         print(f"\nTrain @ epoch {epoch} ({len(train_loader)} batches)")
     #         for batch_id, (img_batch, label_batch) in enumerate(train_loader):
-    #             # model.train_batch_supervised(
-    #             #     img_batch, label_batch, cf.n_train_iters, fixed_preds=cf.fixed_preds_train
-    #             # )
-    #             # Do the same but for MSE
-    #             model.train_batch_supervised_MSE(
+    #             model.train_batch_supervised(
     #                 img_batch, label_batch, cf.n_train_iters, fixed_preds=cf.fixed_preds_train
     #             )
+
+    #             # # Do the same but for MSE
+    #             # model.train_batch_supervised_MSE(
+    #             #     img_batch, label_batch, cf.n_train_iters, fixed_preds=cf.fixed_preds_train
+    #             # )
 
     #             optimizer.step(
     #                 curr_epoch=epoch,
@@ -88,7 +89,7 @@ def main(cf):
 
     #         utils.save_json(metrics, cf.logdir + "metrics.json")
 
-    ############################
+    ###########################
     # This is for normal BP layers
 
     layers = []
@@ -144,7 +145,7 @@ def main(cf):
             model.train()
 
 
-    ############################
+    # ############################
 
 
 
@@ -157,7 +158,7 @@ if __name__ == "__main__":
 
         # experiment params
         cf.seed = seed
-        cf.n_epochs = 30
+        cf.n_epochs = 300
         cf.test_every = 1
         cf.log_every = 100
         cf.logdir = f"data/supervised/{seed}/"
@@ -184,21 +185,24 @@ if __name__ == "__main__":
         # model params
         cf.use_bias = True
         cf.kaiming_init = False
+        # # For MNIST
+        # cf.nodes = [784, 300, 100, 10]
+        # For CIFAR
         cf.nodes = [1024, 640, 200, 10]
         cf.act_fn = utils.ReLU()
 
         wandb.init(
             # set the wandb project where this run will be logged
-            project="cifar-torch-experiment",
-            
+            project="CIFAR-PC",
             # track hyperparameters and run metadata
             config={
             "cf" : pprint.pformat(cf),
             "learning_rate": cf.lr,
-            "architecture": "FC_torch",
-            "dataset": "CIFAR10",
+            "architecture": "FC-BP",
+            "dataset": "CIFAR",
             "epochs": cf.n_epochs,
-            }
+            },
+            name="BP-long"
         )
 
         main(cf)

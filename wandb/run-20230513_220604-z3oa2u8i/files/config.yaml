@@ -1,0 +1,49 @@
+wandb_version: 1
+
+cf:
+  desc: null
+  value: "{'act_fn': <pypc.utils.ReLU object at 0x7f8ce8984850>,\n 'batch_scale':\
+    \ False,\n 'batch_size': 64,\n 'fixed_preds_train': True,\n 'grad_clip': 50,\n\
+    \ 'kaiming_init': False,\n 'label_scale': None,\n 'log_every': 100,\n 'logdir':\
+    \ 'data/supervised/0/',\n 'lr': 0.0001,\n 'mu_dt': 0.01,\n 'n_epochs': 30,\n 'n_train_iters':\
+    \ 50,\n 'nodes': [784, 300, 100, 10],\n 'normalize': False,\n 'optim': 'Adam',\n\
+    \ 'seed': 0,\n 'seeds': [0],\n 'test_every': 1,\n 'test_size': None,\n 'train_size':\
+    \ None,\n 'use_bias': True,\n 'weight_decay': None}"
+learning_rate:
+  desc: null
+  value: 0.0001
+architecture:
+  desc: null
+  value: FC_MSE
+dataset:
+  desc: null
+  value: MNIST
+epochs:
+  desc: null
+  value: 30
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.11
+    cli_version: 0.15.2
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1684029964.454686
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 2
+      - 16
+      - 23
+      4: 3.10.11
+      5: 0.15.2
+      8:
+      - 5

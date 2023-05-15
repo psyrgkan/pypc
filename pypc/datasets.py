@@ -71,7 +71,6 @@ class CIFAR10(datasets.CIFAR10):
     def __getitem__(self, index):
         data, target = super().__getitem__(index)
         data = _to_vector(data)
-        print(data.shape)
         data = data.view(3, 32, 32)
 
         # Convert the 3-channel image to grayscale

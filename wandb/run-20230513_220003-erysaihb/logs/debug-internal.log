@@ -1,0 +1,384 @@
+2023-05-13 22:00:03,739 INFO    StreamThr :84640 [internal.py:wandb_internal():86] W&B internal server running at pid: 84640, started at: 2023-05-13 22:00:03.735711
+2023-05-13 22:00:03,740 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status
+2023-05-13 22:00:03,741 INFO    WriterThread:84640 [datastore.py:open_for_write():85] open: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/run-erysaihb.wandb
+2023-05-13 22:00:03,745 DEBUG   SenderThread:84640 [sender.py:send():375] send: header
+2023-05-13 22:00:03,801 DEBUG   SenderThread:84640 [sender.py:send():375] send: run
+2023-05-13 22:00:04,195 INFO    SenderThread:84640 [dir_watcher.py:__init__():219] watching files in: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files
+2023-05-13 22:00:04,195 INFO    SenderThread:84640 [sender.py:_start_run_threads():1124] run started: erysaihb with start time 1684029603.736046
+2023-05-13 22:00:04,195 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:04,196 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:04,205 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: check_version
+2023-05-13 22:00:04,206 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: check_version
+2023-05-13 22:00:04,346 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: run_start
+2023-05-13 22:00:04,373 DEBUG   HandlerThread:84640 [system_info.py:__init__():31] System info init
+2023-05-13 22:00:04,373 DEBUG   HandlerThread:84640 [system_info.py:__init__():46] System info init done
+2023-05-13 22:00:04,374 INFO    HandlerThread:84640 [system_monitor.py:start():181] Starting system monitor
+2023-05-13 22:00:04,374 INFO    SystemMonitor:84640 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-13 22:00:04,375 INFO    HandlerThread:84640 [system_monitor.py:probe():201] Collecting system info
+2023-05-13 22:00:04,375 INFO    SystemMonitor:84640 [interfaces.py:start():190] Started cpu monitoring
+2023-05-13 22:00:04,376 DEBUG   HandlerThread:84640 [system_info.py:probe():195] Probing system
+2023-05-13 22:00:04,377 INFO    SystemMonitor:84640 [interfaces.py:start():190] Started disk monitoring
+2023-05-13 22:00:04,377 INFO    SystemMonitor:84640 [interfaces.py:start():190] Started memory monitoring
+2023-05-13 22:00:04,378 INFO    SystemMonitor:84640 [interfaces.py:start():190] Started network monitoring
+2023-05-13 22:00:04,404 DEBUG   HandlerThread:84640 [system_info.py:_probe_git():180] Probing git
+2023-05-13 22:00:04,470 DEBUG   HandlerThread:84640 [system_info.py:_probe_git():188] Probing git done
+2023-05-13 22:00:04,471 DEBUG   HandlerThread:84640 [system_info.py:probe():240] Probing system done
+2023-05-13 22:00:04,471 DEBUG   HandlerThread:84640 [system_monitor.py:probe():210] {'os': 'macOS-10.16-x86_64-i386-64bit', 'python': '3.10.11', 'heartbeatAt': '2023-05-14T02:00:04.376765', 'startedAt': '2023-05-14T02:00:03.654301', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '-m scripts.supervised', 'git': {'remote': 'https://github.com/psyrgkan/pypc.git', 'commit': '0c00d85e57ed27d606320735e98588118dfd5ef1'}, 'email': 'psyrganis@gmail.com', 'root': '/Users/tinym/Desktop/pypc', 'host': 'TinyPuter.local', 'username': 'tinym', 'executable': '/Users/tinym/opt/anaconda3/envs/predcod/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'total': 228.27386474609375, 'used': 23.594867706298828}, 'memory': {'total': 16.0}}
+2023-05-13 22:00:04,471 INFO    HandlerThread:84640 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-13 22:00:04,471 INFO    HandlerThread:84640 [system_monitor.py:probe():214] Publishing system info
+2023-05-13 22:00:04,471 DEBUG   HandlerThread:84640 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-13 22:00:04,472 DEBUG   HandlerThread:84640 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-13 22:00:04,472 DEBUG   HandlerThread:84640 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-13 22:00:04,785 DEBUG   HandlerThread:84640 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-13 22:00:04,786 INFO    HandlerThread:84640 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-13 22:00:04,789 DEBUG   SenderThread:84640 [sender.py:send():375] send: files
+2023-05-13 22:00:04,789 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-13 22:00:04,799 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-13 22:00:04,800 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: stop_status
+2023-05-13 22:00:04,972 DEBUG   SenderThread:84640 [sender.py:send():375] send: telemetry
+2023-05-13 22:00:05,198 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:05,198 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:05,199 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/requirements.txt
+2023-05-13 22:00:05,199 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/conda-environment.yaml
+2023-05-13 22:00:05,199 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-metadata.json
+2023-05-13 22:00:05,231 INFO    wandb-upload_0:84640 [upload_job.py:push():137] Uploaded file /var/folders/sk/rfg_lvqj5r5c204vs5zftlgw0000gn/T/tmpep6u2hdxwandb/8i9ywkfr-wandb-metadata.json
+2023-05-13 22:00:07,207 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:08,995 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:11,228 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:12,661 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:12,662 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:12,662 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:12,662 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:13,238 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:14,669 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:15,248 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:15,337 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:15,338 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:15,338 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:15,338 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:16,254 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:17,259 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:17,939 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:17,940 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:17,940 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:17,940 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:18,264 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:19,270 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:19,799 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:19,802 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-13 22:00:19,802 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: stop_status
+2023-05-13 22:00:20,691 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:20,691 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:20,692 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:20,692 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:21,280 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:23,291 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:24,237 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:24,238 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:24,238 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:24,238 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:24,293 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:25,241 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:25,297 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:27,320 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:27,320 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:27,320 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:27,321 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:28,313 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:29,318 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:30,295 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:30,295 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:30,295 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:30,296 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:30,296 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:30,323 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:31,328 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:33,268 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:33,269 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:33,269 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:33,269 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:33,336 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:34,807 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-13 22:00:34,807 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: stop_status
+2023-05-13 22:00:35,346 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:35,897 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:36,351 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/config.yaml
+2023-05-13 22:00:36,483 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:36,484 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:36,484 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:36,484 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:37,357 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:37,357 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:39,703 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:39,703 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:39,703 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:39,704 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:40,365 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:41,370 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:41,710 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:42,789 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:42,790 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:42,790 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:42,791 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:43,381 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:45,390 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:45,929 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:45,929 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:45,929 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:45,930 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:46,391 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:46,935 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:47,396 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:48,967 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:48,968 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:48,968 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:48,968 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:49,404 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:49,809 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-13 22:00:49,809 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: stop_status
+2023-05-13 22:00:51,413 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:52,374 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:52,375 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:52,375 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:52,375 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:52,376 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:52,417 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:53,420 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:55,598 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:55,599 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:55,599 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:55,600 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:56,436 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:00:57,441 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:00:57,606 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:00:58,957 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:00:58,958 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:00:58,958 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:00:58,959 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:00:59,449 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:01,460 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:02,088 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:02,089 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:02,089 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:02,089 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:02,465 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:03,095 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:01:03,471 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:04,385 DEBUG   SystemMonitor:84640 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-13 22:01:04,386 DEBUG   SenderThread:84640 [sender.py:send():375] send: stats
+2023-05-13 22:01:04,810 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-13 22:01:04,811 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: stop_status
+2023-05-13 22:01:05,094 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:05,095 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:05,095 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:05,095 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:05,480 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:07,491 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:08,094 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:08,095 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:08,095 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:08,095 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:01:08,095 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:08,496 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:09,502 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:10,944 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:10,944 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:10,945 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:10,945 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:11,509 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:11,518 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:13,958 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:01:15,027 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:15,028 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:15,028 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:15,029 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:15,528 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:15,528 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:18,088 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:18,088 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:18,088 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:18,107 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:18,544 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:19,113 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:01:19,549 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:19,816 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-13 22:01:19,816 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: stop_status
+2023-05-13 22:01:20,938 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:20,938 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:20,939 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:20,939 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:21,560 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:21,560 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:24,134 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:24,134 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:01:24,134 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:24,135 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:24,135 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:24,576 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:25,581 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:27,005 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:27,006 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:27,006 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:27,006 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:27,592 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:27,592 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:30,018 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:01:30,405 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:30,406 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:30,406 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:30,406 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:30,607 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:31,608 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:33,922 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:33,923 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:33,923 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:33,924 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:34,400 DEBUG   SenderThread:84640 [sender.py:send():375] send: stats
+2023-05-13 22:01:34,621 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:34,821 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-13 22:01:34,821 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: stop_status
+2023-05-13 22:01:35,622 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:35,894 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:01:37,592 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:37,593 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:37,593 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:37,593 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:37,630 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:39,636 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:40,972 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:40,972 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:01:40,973 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:40,973 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:40,973 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:41,644 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:43,655 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:44,287 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-13 22:01:44,288 DEBUG   SenderThread:84640 [sender.py:send():375] send: history
+2023-05-13 22:01:44,288 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: summary_record
+2023-05-13 22:01:44,288 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:44,289 DEBUG   SenderThread:84640 [sender.py:send():375] send: telemetry
+2023-05-13 22:01:44,290 DEBUG   SenderThread:84640 [sender.py:send():375] send: exit
+2023-05-13 22:01:44,290 INFO    SenderThread:84640 [sender.py:send_exit():598] handling exit code: 0
+2023-05-13 22:01:44,290 INFO    SenderThread:84640 [sender.py:send_exit():600] handling runtime: 99
+2023-05-13 22:01:44,290 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:44,290 INFO    SenderThread:84640 [sender.py:send_exit():606] send defer
+2023-05-13 22:01:44,290 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:44,291 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-13 22:01:44,291 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:44,291 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-13 22:01:44,291 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 1
+2023-05-13 22:01:44,291 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:44,291 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-13 22:01:44,291 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:44,291 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-13 22:01:44,291 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 2
+2023-05-13 22:01:44,291 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:44,291 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-13 22:01:44,291 INFO    HandlerThread:84640 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-13 22:01:44,291 DEBUG   SystemMonitor:84640 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-13 22:01:44,291 INFO    HandlerThread:84640 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-13 22:01:44,291 DEBUG   SystemMonitor:84640 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-13 22:01:44,292 INFO    HandlerThread:84640 [interfaces.py:finish():202] Joined disk monitor
+2023-05-13 22:01:44,292 INFO    HandlerThread:84640 [interfaces.py:finish():202] Joined memory monitor
+2023-05-13 22:01:44,292 INFO    HandlerThread:84640 [interfaces.py:finish():202] Joined network monitor
+2023-05-13 22:01:44,292 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:44,292 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-13 22:01:44,292 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 3
+2023-05-13 22:01:44,292 DEBUG   SenderThread:84640 [sender.py:send():375] send: stats
+2023-05-13 22:01:44,292 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:44,293 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-13 22:01:44,293 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:44,293 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-13 22:01:44,293 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 4
+2023-05-13 22:01:44,293 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:44,293 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-13 22:01:44,293 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:44,293 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-13 22:01:44,293 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 5
+2023-05-13 22:01:44,293 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:44,293 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-13 22:01:44,293 DEBUG   SenderThread:84640 [sender.py:send():375] send: summary
+2023-05-13 22:01:44,294 INFO    SenderThread:84640 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-13 22:01:44,294 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:44,294 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-13 22:01:44,294 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 6
+2023-05-13 22:01:44,294 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:44,294 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-13 22:01:44,294 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:44,294 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-13 22:01:44,296 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 22:01:44,400 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 7
+2023-05-13 22:01:44,400 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:44,400 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-13 22:01:44,400 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:44,400 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-13 22:01:44,659 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:44,660 INFO    Thread-12 :84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/config.yaml
+2023-05-13 22:01:45,242 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 8
+2023-05-13 22:01:45,242 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:45,243 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-13 22:01:45,243 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:45,243 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-13 22:01:45,245 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 9
+2023-05-13 22:01:45,245 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:45,245 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-13 22:01:45,246 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:45,246 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-13 22:01:45,246 INFO    SenderThread:84640 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-13 22:01:45,293 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-13 22:01:45,662 INFO    SenderThread:84640 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:45,663 INFO    SenderThread:84640 [dir_watcher.py:finish():395] scan: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files
+2023-05-13 22:01:45,663 INFO    SenderThread:84640 [dir_watcher.py:finish():409] scan save: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/requirements.txt requirements.txt
+2023-05-13 22:01:45,664 INFO    SenderThread:84640 [dir_watcher.py:finish():409] scan save: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log output.log
+2023-05-13 22:01:45,665 INFO    SenderThread:84640 [dir_watcher.py:finish():409] scan save: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/config.yaml config.yaml
+2023-05-13 22:01:45,666 INFO    SenderThread:84640 [dir_watcher.py:finish():409] scan save: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json wandb-summary.json
+2023-05-13 22:01:45,666 INFO    SenderThread:84640 [dir_watcher.py:finish():409] scan save: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/conda-environment.yaml conda-environment.yaml
+2023-05-13 22:01:45,676 INFO    SenderThread:84640 [dir_watcher.py:finish():409] scan save: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-metadata.json wandb-metadata.json
+2023-05-13 22:01:45,676 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 10
+2023-05-13 22:01:45,681 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: poll_exit
+2023-05-13 22:01:45,682 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:45,682 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-13 22:01:45,687 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:45,688 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-13 22:01:45,688 INFO    SenderThread:84640 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-13 22:01:46,033 INFO    wandb-upload_0:84640 [upload_job.py:push():137] Uploaded file /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/output.log
+2023-05-13 22:01:46,180 INFO    wandb-upload_2:84640 [upload_job.py:push():137] Uploaded file /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/config.yaml
+2023-05-13 22:01:46,183 INFO    wandb-upload_1:84640 [upload_job.py:push():137] Uploaded file /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/requirements.txt
+2023-05-13 22:01:46,212 INFO    wandb-upload_3:84640 [upload_job.py:push():137] Uploaded file /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/files/wandb-summary.json
+2023-05-13 22:01:46,298 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-13 22:01:46,300 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: poll_exit
+2023-05-13 22:01:46,419 INFO    Thread-11 (_thread_body):84640 [sender.py:transition_state():626] send defer: 11
+2023-05-13 22:01:46,420 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:46,420 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-13 22:01:46,421 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:46,421 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-05-13 22:01:46,421 INFO    SenderThread:84640 [file_pusher.py:join():172] waiting for file pusher
+2023-05-13 22:01:46,422 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 12
+2023-05-13 22:01:46,422 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:46,422 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-13 22:01:46,423 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:46,423 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-05-13 22:01:46,526 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 13
+2023-05-13 22:01:46,528 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:46,528 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-13 22:01:46,529 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:46,529 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-05-13 22:01:46,529 INFO    SenderThread:84640 [sender.py:transition_state():626] send defer: 14
+2023-05-13 22:01:46,530 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 22:01:46,530 DEBUG   SenderThread:84640 [sender.py:send():375] send: final
+2023-05-13 22:01:46,531 INFO    HandlerThread:84640 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-13 22:01:46,531 DEBUG   SenderThread:84640 [sender.py:send():375] send: footer
+2023-05-13 22:01:46,532 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: defer
+2023-05-13 22:01:46,532 INFO    SenderThread:84640 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-05-13 22:01:46,535 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-13 22:01:46,536 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: server_info
+2023-05-13 22:01:46,536 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: poll_exit
+2023-05-13 22:01:46,536 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-13 22:01:46,537 DEBUG   SenderThread:84640 [sender.py:send_request():402] send_request: server_info
+2023-05-13 22:01:46,537 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-13 22:01:46,702 DEBUG   HandlerThread:84640 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-13 22:01:46,703 INFO    HandlerThread:84640 [handler.py:finish():845] shutting down handler
+2023-05-13 22:01:47,542 INFO    WriterThread:84640 [datastore.py:close():298] close: /Users/tinym/Desktop/pypc/wandb/run-20230513_220003-erysaihb/run-erysaihb.wandb
+2023-05-13 22:01:47,705 INFO    SenderThread:84640 [sender.py:finish():1550] shutting down sender
+2023-05-13 22:01:47,705 INFO    SenderThread:84640 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-13 22:01:47,705 INFO    SenderThread:84640 [file_pusher.py:join():172] waiting for file pusher

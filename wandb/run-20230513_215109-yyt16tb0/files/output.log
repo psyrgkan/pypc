@@ -1,0 +1,139 @@
+Starting supervised experiment data/supervised/0/: --seed 0 --device cpu
+{'act_fn': <pypc.utils.ReLU object at 0x7fb9e0a24850>,
+ 'batch_scale': False,
+ 'batch_size': 64,
+ 'fixed_preds_train': True,
+ 'grad_clip': 50,
+ 'kaiming_init': False,
+ 'label_scale': None,
+ 'log_every': 100,
+ 'logdir': 'data/supervised/0/',
+ 'lr': 0.0001,
+ 'mu_dt': 0.01,
+ 'n_epochs': 30,
+ 'n_train_iters': 50,
+ 'nodes': [1024, 640, 200, 10],
+ 'normalize': False,
+ 'optim': 'Adam',
+ 'seed': 0,
+ 'seeds': [0],
+ 'test_every': 1,
+ 'test_size': None,
+ 'train_size': None,
+ 'use_bias': True,
+ 'weight_decay': None}
+Files already downloaded and verified
+Files already downloaded and verified
+Loaded data [train batches: 781 test batches: 156]
+Train @ epoch 1 (781 batches)
+Test @ epoch 1 / Accuracy: 0.0993
+Test @ epoch 1 / Accuracy: 0.1061
+Test @ epoch 1 / Accuracy: 0.1091
+Test @ epoch 1 / Accuracy: 0.1071
+Test @ epoch 1 / Accuracy: 0.1033
+Test @ epoch 1 / Accuracy: 0.1022
+Test @ epoch 1 / Accuracy: 0.1019
+Test @ epoch 1 / Accuracy: 0.1007
+Test @ epoch 1 / Accuracy: 0.1010
+Test @ epoch 1 / Accuracy: 0.1014
+Test @ epoch 1 / Accuracy: 0.1018
+Test @ epoch 1 / Accuracy: 0.1046
+Test @ epoch 1 / Accuracy: 0.1083
+Test @ epoch 1 / Accuracy: 0.1151
+Test @ epoch 1 / Accuracy: 0.1176
+Test @ epoch 1 / Accuracy: 0.1213
+Test @ epoch 1 / Accuracy: 0.1234
+Test @ epoch 1 / Accuracy: 0.1247
+Test @ epoch 1 / Accuracy: 0.1246
+Test @ epoch 1 / Accuracy: 0.1232
+Test @ epoch 1 / Accuracy: 0.1214
+Test @ epoch 1 / Accuracy: 0.1238
+Test @ epoch 1 / Accuracy: 0.1251
+Test @ epoch 1 / Accuracy: 0.1241
+Test @ epoch 1 / Accuracy: 0.1199
+Test @ epoch 1 / Accuracy: 0.1183
+Test @ epoch 1 / Accuracy: 0.1158
+Test @ epoch 1 / Accuracy: 0.1194
+Test @ epoch 1 / Accuracy: 0.1267
+Test @ epoch 1 / Accuracy: 0.1352
+Test @ epoch 1 / Accuracy: 0.1473
+Test @ epoch 1 / Accuracy: 0.1560
+Test @ epoch 1 / Accuracy: 0.1580
+Test @ epoch 1 / Accuracy: 0.1595
+Test @ epoch 1 / Accuracy: 0.1591
+Test @ epoch 1 / Accuracy: 0.1601
+Test @ epoch 1 / Accuracy: 0.1574
+Test @ epoch 1 / Accuracy: 0.1544
+Test @ epoch 1 / Accuracy: 0.1545
+Test @ epoch 1 / Accuracy: 0.1521
+Test @ epoch 1 / Accuracy: 0.1512
+Test @ epoch 1 / Accuracy: 0.1514
+Test @ epoch 1 / Accuracy: 0.1508
+Test @ epoch 1 / Accuracy: 0.1516
+Test @ epoch 1 / Accuracy: 0.1522
+Test @ epoch 1 / Accuracy: 0.1534
+Test @ epoch 1 / Accuracy: 0.1527
+Test @ epoch 1 / Accuracy: 0.1525
+Test @ epoch 1 / Accuracy: 0.1577
+Test @ epoch 1 / Accuracy: 0.1623
+Test @ epoch 1 / Accuracy: 0.1686
+Test @ epoch 1 / Accuracy: 0.1735
+Test @ epoch 1 / Accuracy: 0.1789
+Test @ epoch 1 / Accuracy: 0.1846
+Test @ epoch 1 / Accuracy: 0.1866
+Test @ epoch 1 / Accuracy: 0.1869
+Test @ epoch 1 / Accuracy: 0.1862
+Test @ epoch 1 / Accuracy: 0.1805
+Test @ epoch 1 / Accuracy: 0.1794
+Test @ epoch 1 / Accuracy: 0.1795
+Test @ epoch 1 / Accuracy: 0.1818
+Test @ epoch 1 / Accuracy: 0.1834
+Test @ epoch 1 / Accuracy: 0.1827
+Test @ epoch 1 / Accuracy: 0.1825
+Test @ epoch 1 / Accuracy: 0.1837
+Test @ epoch 1 / Accuracy: 0.1840
+Test @ epoch 1 / Accuracy: 0.1847
+Test @ epoch 1 / Accuracy: 0.1885
+Test @ epoch 1 / Accuracy: 0.1893
+Test @ epoch 1 / Accuracy: 0.1892
+Test @ epoch 1 / Accuracy: 0.1895
+Test @ epoch 1 / Accuracy: 0.1888
+Test @ epoch 1 / Accuracy: 0.1888
+Test @ epoch 1 / Accuracy: 0.1881
+Test @ epoch 1 / Accuracy: 0.1882
+Test @ epoch 1 / Accuracy: 0.1893
+Test @ epoch 1 / Accuracy: 0.1852
+Test @ epoch 1 / Accuracy: 0.1816
+Test @ epoch 1 / Accuracy: 0.1792
+Test @ epoch 1 / Accuracy: 0.1780
+Test @ epoch 1 / Accuracy: 0.1757
+Test @ epoch 1 / Accuracy: 0.1735
+Test @ epoch 1 / Accuracy: 0.1700
+Test @ epoch 1 / Accuracy: 0.1694
+Test @ epoch 1 / Accuracy: 0.1696
+Test @ epoch 1 / Accuracy: 0.1699
+Test @ epoch 1 / Accuracy: 0.1688
+Test @ epoch 1 / Accuracy: 0.1665
+Test @ epoch 1 / Accuracy: 0.1640
+Test @ epoch 1 / Accuracy: 0.1619
+Test @ epoch 1 / Accuracy: 0.1593
+Traceback (most recent call last):
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/tinym/Desktop/pypc/scripts/supervised.py", line 203, in <module>
+    main(cf)
+  File "/Users/tinym/Desktop/pypc/scripts/supervised.py", line 137, in main
+    label_preds = model(img_batch)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 103, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "/Users/tinym/opt/anaconda3/envs/predcod/lib/python3.10/site-packages/torch/nn/functional.py", line 1457, in relu
+    result = torch.relu(input)
+KeyboardInterrupt

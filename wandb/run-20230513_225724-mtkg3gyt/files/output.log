@@ -1,0 +1,87 @@
+Starting supervised experiment data/supervised/0/: --seed 0 --device cpu
+{'act_fn': <pypc.utils.ReLU object at 0x7f92a9ebc820>,
+ 'batch_scale': False,
+ 'batch_size': 64,
+ 'fixed_preds_train': True,
+ 'grad_clip': 50,
+ 'kaiming_init': False,
+ 'label_scale': None,
+ 'log_every': 100,
+ 'logdir': 'data/supervised/0/',
+ 'lr': 0.0001,
+ 'mu_dt': 0.01,
+ 'n_epochs': 30,
+ 'n_train_iters': 50,
+ 'nodes': [1024, 640, 200, 10],
+ 'normalize': False,
+ 'optim': 'Adam',
+ 'seed': 0,
+ 'seeds': [0],
+ 'test_every': 1,
+ 'test_size': None,
+ 'train_size': None,
+ 'use_bias': True,
+ 'weight_decay': None}
+Files already downloaded and verified
+Files already downloaded and verified
+Loaded data [train batches: 781 test batches: 156]
+Train @ epoch 1 (781 batches)
+Test @ epoch 1 / Accuracy: 0.2530
+Train @ epoch 2 (781 batches)
+Test @ epoch 2 / Accuracy: 0.2808
+Train @ epoch 3 (781 batches)
+Test @ epoch 3 / Accuracy: 0.2966
+Train @ epoch 4 (781 batches)
+Test @ epoch 4 / Accuracy: 0.3094
+Train @ epoch 5 (781 batches)
+Test @ epoch 5 / Accuracy: 0.3175
+Train @ epoch 6 (781 batches)
+Test @ epoch 6 / Accuracy: 0.3205
+Train @ epoch 7 (781 batches)
+Test @ epoch 7 / Accuracy: 0.3255
+Train @ epoch 8 (781 batches)
+Test @ epoch 8 / Accuracy: 0.3325
+Train @ epoch 9 (781 batches)
+Test @ epoch 9 / Accuracy: 0.3360
+Train @ epoch 10 (781 batches)
+Test @ epoch 10 / Accuracy: 0.3421
+Train @ epoch 11 (781 batches)
+Test @ epoch 11 / Accuracy: 0.3446
+Train @ epoch 12 (781 batches)
+Test @ epoch 12 / Accuracy: 0.3491
+Train @ epoch 13 (781 batches)
+Test @ epoch 13 / Accuracy: 0.3515
+Train @ epoch 14 (781 batches)
+Test @ epoch 14 / Accuracy: 0.3531
+Train @ epoch 15 (781 batches)
+Test @ epoch 15 / Accuracy: 0.3540
+Train @ epoch 16 (781 batches)
+Test @ epoch 16 / Accuracy: 0.3564
+Train @ epoch 17 (781 batches)
+Test @ epoch 17 / Accuracy: 0.3572
+Train @ epoch 18 (781 batches)
+Test @ epoch 18 / Accuracy: 0.3606
+Train @ epoch 19 (781 batches)
+Test @ epoch 19 / Accuracy: 0.3628
+Train @ epoch 20 (781 batches)
+Test @ epoch 20 / Accuracy: 0.3652
+Train @ epoch 21 (781 batches)
+Test @ epoch 21 / Accuracy: 0.3691
+Train @ epoch 22 (781 batches)
+Test @ epoch 22 / Accuracy: 0.3741
+Train @ epoch 23 (781 batches)
+Test @ epoch 23 / Accuracy: 0.3767
+Train @ epoch 24 (781 batches)
+Test @ epoch 24 / Accuracy: 0.3795
+Train @ epoch 25 (781 batches)
+Test @ epoch 25 / Accuracy: 0.3816
+Train @ epoch 26 (781 batches)
+Test @ epoch 26 / Accuracy: 0.3831
+Train @ epoch 27 (781 batches)
+Test @ epoch 27 / Accuracy: 0.3873
+Train @ epoch 28 (781 batches)
+Test @ epoch 28 / Accuracy: 0.3901
+Train @ epoch 29 (781 batches)
+Test @ epoch 29 / Accuracy: 0.3905
+Train @ epoch 30 (781 batches)
+Test @ epoch 30 / Accuracy: 0.3915

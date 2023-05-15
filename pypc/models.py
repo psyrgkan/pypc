@@ -188,4 +188,3 @@ class PCModel(object):
     @property
     def params(self):
         return self.layers
-

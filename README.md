@@ -7,17 +7,11 @@
 
 An implementation of predictive coding in Python, utilising `pytorch` for GPU acceleration. We compare the use of the free energy as a loss function vs mean squared error. In addition we also test these predictive coding networks against a normal backpropagation network.
 
-
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 ## Running
 
 # Free Energy Loss Function
-
-```bash
-python -m scripts.generative
-```
 
 ```bash
 python -m scripts.supervised
@@ -26,11 +20,13 @@ python -m scripts.supervised
 # Mean Squared Error Loss Function
 
 ```bash
-python -m scripts.generative_mse
+python -m scripts.supervised_mse
 ```
 
+# Backpropagation
+
 ```bash
-python -m scripts.supervised_mse
+python -m scripts.supervised_bp
 ```
 
 ## Requirements
